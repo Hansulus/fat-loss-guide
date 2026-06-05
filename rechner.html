@@ -1,0 +1,53 @@
+<html>
+    <head>
+    <title>TDEE-Rechner</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <nav>
+            <a href="index.html">Startseite</a>
+            <a href="mein-weg.html">Mein Weg</a>
+            <a href="grundlagen.html">Grundlagen</a>
+            <a href="alltag.html">Alltag</a>
+        </nav>
+
+    <h1 class="headline">Kalorienbedarf (TDEE) berechnen</h1>
+    <p>Kalorienbedarf berechnen:</p>
+
+    <label>Geschlecht</label>
+    <select id="gender">
+        <option value="5">männlich</option>
+        <option value="-161">weiblich</option>
+    </select><br>
+
+    <label>Gewicht in kg</label>
+    <input id="weight" type="number"><br>
+
+    <label>Größe in cm</label>
+    <input id="height" type="number"><br>
+
+    <label>Alter</label>
+    <input id="age" type="number"><br>
+
+    <label>Aktivitätslevel</label>
+    <select id="activity_lvl">
+        <option value="1.2">1: kaum Bewegung</option>
+        <option value="1.375">2: Leicht aktiv</option>
+        <option value="1.55">3: Mäßig aktiv</option>
+        <option value="1.725">4: Sehr aktiv</option>
+        <option value="1.9">5: Extrem aktiv</option>
+    </select><br>
+
+    <button id="calculate_tdee">Berechnen
+        
+    </button>
+
+    <output id="output">Dein TDEE:</output>
+
+
+    <script src="script.js"></script>
+
+    </body>
+
+</html>
