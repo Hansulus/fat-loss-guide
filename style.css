@@ -17,6 +17,10 @@ select {
     width: 150px;
 }
 
+input {
+    width: 150px;
+}
+
 article {
     max-width: 70ch;
     margin: 0 auto;
@@ -39,15 +43,12 @@ tr {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.breakfast {
+.breakfast, .breakfast tr, .breakfast td {
     width: 40%;
+    border: 1px solid black;
+    border-collapse: collapse;
 }
 
 .groceries {
     width: 100%;
-}
-
-table, th, tr, td {
-    border: 1px solid black;
-    border-collapse: collapse;
 }

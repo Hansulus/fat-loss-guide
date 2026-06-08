@@ -16,8 +16,9 @@ function tdee() {
 
     
 };
+
 const button = document.getElementById("calculate_tdee")
-const output = document.getElementById("output")
+const output = document.getElementById("output_tdee")
 
 button.addEventListener("click", function(){
     const result = tdee();

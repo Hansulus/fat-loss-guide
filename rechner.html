@@ -13,38 +13,90 @@
         </nav>
 
     <h1 class="headline">Kalorienbedarf (TDEE) berechnen</h1>
+    <p>TDEE = Gesamtkalorienbedarf (Grundumsatz + Aktivitätsenergie)</p>
     <p>Kalorienbedarf berechnen:</p>
 
-    <label>Geschlecht</label>
-    <select id="gender">
-        <option value="5">männlich</option>
-        <option value="-161">weiblich</option>
-    </select><br>
+    <table class="tdee_calc">
+        <tr>
+            <td>
+                <label>Geschlecht</label>
+            </td>
+            <td>
+                <select id="gender">
+                    <option value="5">männlich</option>
+                    <option value="-161">weiblich</option>
+                </select>
+            </td>
+        </tr>
 
-    <label>Gewicht in kg</label>
-    <input id="weight" type="number"><br>
+        <tr>
+            <td>
+                <label>Gewicht in kg</label>
+            </td>
+            <td>
+                <input id="weight" type="number">
+            </td>
+        </tr>
 
-    <label>Größe in cm</label>
-    <input id="height" type="number"><br>
+        <tr>
+            <td>
+                <label>Größe in cm</label>
+            </td>
+            <td>
+                <input id="height" type="number">
+            </td>
+        </tr>
 
-    <label>Alter</label>
-    <input id="age" type="number"><br>
+        <tr>
+            <td>
+                <label>Alter</label>
+            </td>
+            <td>
+                <input id="age" type="number">
+            </td>
+        </tr>
 
-    <label>Aktivitätslevel</label>
-    <select id="activity_lvl">
-        <option value="1.2">1: kaum Bewegung</option>
-        <option value="1.375">2: Leicht aktiv</option>
-        <option value="1.55">3: Mäßig aktiv</option>
-        <option value="1.725">4: Sehr aktiv</option>
-        <option value="1.9">5: Extrem aktiv</option>
-    </select><br>
+        <tr>
+            <td>
+                <label>Aktivitätslevel</label>
+            </td>
+            <td>
+                <select id="activity_lvl">
+                    <option value="1.2">1: kaum Bewegung</option>
+                    <option value="1.375">2: Leicht aktiv</option>
+                    <option value="1.55">3: Mäßig aktiv</option>
+                    <option value="1.725">4: Sehr aktiv</option>
+                    <option value="1.9">5: Extrem aktiv</option>
+                </select>
+            </td>
+        </tr>
 
-    <button id="calculate_tdee">Berechnen
-        
-    </button>
+        <tr>
+            <td>
+                <label>Dein TDEE:</label>
+            </td>
+            <td>
+                <output id="output_tdee"></output>
+            </td>
+            <td>
+                <button id="calculate_tdee">Berechnen</button>
+            </td>
+        </tr>
+    </table> 
+    
+    <p>1,2-2g Proteine pro Kilogramm Körpergewicht sind sinnvoll für Muskelerhalt und -aufbau.</p>
+    <p>Proteinbedarf berechnen:</p>
 
-    <output id="output">Dein TDEE:</output>
-
+    <table class="protein_calc">
+        <tr>
+            <td>
+                <label>Tägliche Proteinzufuhr:</label>
+            </td>
+            <td>
+                <output id="output_protein1"></output>-<output id="output_protein2"></output>
+            </td>
+        </tr>
+    </table>
 
     <script src="script.js"></script>
 
