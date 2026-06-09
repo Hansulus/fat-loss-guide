@@ -17,10 +17,29 @@ function tdee() {
     
 };
 
+function protein(a){
+    const weight = Number(document.getElementById("weight").value)
+
+    let protein_result = a * weight
+
+    if (isNaN(protein_result)) {
+        console.log("Ungültige Eingabe erkannt");
+    }
+
+    return protein_result
+
+};
+
 const button = document.getElementById("calculate_tdee")
-const output = document.getElementById("output_tdee")
+const output_tdee = document.getElementById("output_tdee")
+const output_protein1 = document.getElementById("output_protein1")
+const output_protein2 = document.getElementById("output_protein2")
 
 button.addEventListener("click", function(){
-    const result = tdee();
-    output.textContent = result.toFixed();
+    const result_tdee = tdee();
+    const result_protein1 = protein(1.2);
+    const result_protein2 = protein(2); 
+    output_tdee.textContent = result_tdee.toFixed();
+    output_protein1.textContent = result_protein1.toFixed();
+    output_protein2.textContent = result_protein2.toFixed();
 })
