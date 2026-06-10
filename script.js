@@ -43,3 +43,8 @@ button.addEventListener("click", function(){
     output_protein1.textContent = result_protein1.toFixed();
     output_protein2.textContent = result_protein2.toFixed();
 })
+
+function popup_activity(){
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}

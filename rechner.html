@@ -2,6 +2,7 @@
     <head>
     <title>TDEE-Rechner</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name=viewport content="width=device-width, initial-scale=1">
     </head>
 
     <body>
@@ -62,12 +63,24 @@
             </td>
             <td>
                 <select id="activity_lvl">
-                    <option value="1.2">1: kaum Bewegung</option>
+                    <option value="1.2">1: Kaum Bewegung</option>
                     <option value="1.375">2: Leicht aktiv</option>
                     <option value="1.55">3: Mäßig aktiv</option>
                     <option value="1.725">4: Sehr aktiv</option>
                     <option value="1.9">5: Extrem aktiv</option>
                 </select>
+            </td>
+            <td>
+                <div class="popup" onclick="popup_activity()">
+                    <img class="info_icon" src="assets\info.png" alt="Info">
+                    <span class="popuptext" id="myPopup">
+                        1: Wenig Bewegung (z.B. Büro)<br>
+                        2: 1-2x Training die Woche <br>
+                        3: 3-4x Training die Woche <br>
+                        4: Fast tägliches Training <br>
+                        5: Tägliches Training + aktiver Job
+                    </span>
+                </div>
             </td>
         </tr>
 
