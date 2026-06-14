@@ -8,6 +8,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.underchapter {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 nav {
     display: flex;
     gap: 20px;
