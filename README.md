@@ -32,7 +32,7 @@ Technologien
 
 Lokale Nutzung
 Repository klonen und index.html im Browser öffnen.
-htpps://www.hansulus.github.io/fat-loss-guide aufrufen.
+www.hansulus.github.io/fat-loss-guide aufrufen.
 
 Disclaimer
 Diese Website ersetzt keine medizinische Beratung.
