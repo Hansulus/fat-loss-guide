@@ -18,9 +18,9 @@ function tdee() {
 };
 
 function protein(a){
-    const weight = Number(document.getElementById("weight").value)
+    const height = Number(document.getElementById("height").value)
 
-    let protein_result = a * weight
+    let protein_result =  a * (height - 100)
 
     if (isNaN(protein_result)) {
         console.log("Ungültige Eingabe erkannt");
